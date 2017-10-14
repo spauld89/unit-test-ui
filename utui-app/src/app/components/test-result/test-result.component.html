@@ -1,0 +1,12 @@
+<div>
+  <ul *ngIf="resultList && resultList.length > 0">
+    <li *ngFor="let item of resultList">
+      Test {{item.isPassed}}: expected {{item.expected}}, got {{item.result}}
+    </li>
+  </ul>
+</div>
+
+<!-- TODO:
+1. get result list from testing service
+2. display array of results
+-->
